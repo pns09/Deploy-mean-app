@@ -36,6 +36,14 @@ app.use(passport.initialize());
 
 app.use('/', indexRouter);
 
+//render front-end application from dist folder
+app.use(express.static(__dirname + '/dist/frontend'));
+
+app.get('/*', function(req,res) {
+    
+res.sendFile(path.join(__dirname+'/dist/frontend/index.html'));
+});
+
 
 // function validateUser(req, res, next) {
 //   jwt.verify(req.headers['x-access-token'], req.app.get('secretKey'), function(err, decoded) {

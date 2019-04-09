@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node /backend/app.js"
+    "start": "node ./backend/app.js"
   },
   "keywords": [
     "Mean-Stack",
@@ -29,6 +29,6 @@
     "pug": "2.0.0-beta11"
   },
   "engines": {
-    "node": "10.x"
+    "node": "11.4.0"
   }
 }
